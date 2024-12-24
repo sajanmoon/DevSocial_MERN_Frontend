@@ -1,4 +1,4 @@
-# LOGIN AFTER REFRESH
+# LOGGEDIN AFTER REFRESH
 
 - In a Body.js call a profile/view API with axios
 - Add a parameter in API with credentials true

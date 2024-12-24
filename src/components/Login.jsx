@@ -9,10 +9,9 @@ const Login = () => {
   const [password, setPassword] = useState("Moon1@");
 
   const [error, setError] = useState("");
-  
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
 
   const handleLogin = async () => {
     try {
@@ -25,7 +24,7 @@ const Login = () => {
         { withCredentials: true }
       );
       dispatch(addUser(res.data));
-      navigate("/");
+      navigate("/feed");
       console.log(res.data);
     } catch (error) {
       setError(error?.response?.data || "something went wrong");
