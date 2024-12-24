@@ -24,13 +24,11 @@ const Feed = () => {
   useEffect(() => {
     handleFeed();
   }, []);
-  console.log("feed", feed);
-  console.log("feed[0]", feed[0]);
 
   return (
     feed && (
       <div className=" flex justify-center my-10">
-        <UserCard user={feed} />
+        <UserCard user={feed[0]} />
       </div>
     )
   );
