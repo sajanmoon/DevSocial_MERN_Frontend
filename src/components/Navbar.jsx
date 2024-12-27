@@ -6,8 +6,6 @@ import { removeUser } from "../store/userSlice";
 
 const Navbar = () => {
   const user = useSelector((store) => store.user);
-  console.log("navbar user", user);
-  // console.log("photoUrl", user.photoUrl);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -61,7 +59,10 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a>Settings</a>
+                  <Link to="/request">Requests</Link>
+                </li>
+                <li>
+                  <Link to="/connection">Connections</Link>
                 </li>
                 <li>
                   <a onClick={handleLogout}>Logout</a>

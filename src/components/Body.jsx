@@ -14,9 +14,13 @@ const Body = () => {
   const renderProfile = async () => {
     if (userData) return;
     try {
-      const res = await axios.get("http://localhost:3000/profile/view", {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        "http://localhost:3000/profile/view",
+
+        {
+          withCredentials: true,
+        }
+      );
       dispatch(addUser(res.data));
     } catch (error) {
       if (error.status === 401) {

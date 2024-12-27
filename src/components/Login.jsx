@@ -1,12 +1,12 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/userSlice";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [email, setEmail] = useState("sajanmoon52@gmail.com");
-  const [password, setPassword] = useState("Moon1@");
+  const [email, setEmail] = useState("rahul@gmail.com");
+  const [password, setPassword] = useState("Singh1@");
 
   const [error, setError] = useState("");
 
@@ -31,6 +31,7 @@ const Login = () => {
       console.error(error);
     }
   };
+
   return (
     <div className="card bg-base-300 w-96 shadow-xl m-auto">
       <div className="card-body">
