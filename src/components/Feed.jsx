@@ -3,6 +3,7 @@ import UserCard from "./UserCard";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { addFeed } from "../store/feedSlice";
+import { BASE_URL } from "../utils/constants";
 
 const Feed = () => {
   const dispatch = useDispatch();
@@ -12,11 +13,11 @@ const Feed = () => {
   const handleFeed = async () => {
     if (feed) return;
     try {
-      const res = await axios.get("http://localhost:3000/feed", {
+      const res = await axios.get(BASE_URL + "/feed", {
         withCredentials: true,
       });
       dispatch(addFeed(res.data));
-    } catch (error) {
+    } catch (error) { 
       console.error("feed failed");
     }
   };
@@ -24,6 +25,10 @@ const Feed = () => {
   useEffect(() => {
     handleFeed();
   }, []);
+
+  if (!feed) return;
+
+  if (feed.length <= 0) return <h1>No new users found</h1>;
 
   return (
     feed && (
