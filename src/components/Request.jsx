@@ -6,7 +6,6 @@ import { BASE_URL } from "../utils/constants";
 
 const Request = () => {
   const requests = useSelector((store) => store.request);
-  console.log("request", requests);
 
   const dispatch = useDispatch();
 
@@ -25,12 +24,9 @@ const Request = () => {
 
   const handleRequest = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:3000/user/request/received",
-        {
-          withCredentials: true,
-        }
-      );
+      const res = await axios.get(BASE_URL + "/user/request/received", {
+        withCredentials: true,
+      });
       console.log("res", res);
 
       dispatch(addRequest(res?.data?.data));

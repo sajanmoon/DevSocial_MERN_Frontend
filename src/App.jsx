@@ -6,6 +6,7 @@ import appStore from "./store/appStore";
 import Feed from "./components/Feed";
 import Profile from "./components/Profile";
 import Connection from "./components/Connection";
+import Request from "./components/Request";
 
 function App() {
   return (
