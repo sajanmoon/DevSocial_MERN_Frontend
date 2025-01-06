@@ -30,9 +30,11 @@ const Body = () => {
       console.error("login failed");
     }
   };
+
   useEffect(() => {
     renderProfile();
   }, []);
+
   return (
     <div>
       <Navbar />
