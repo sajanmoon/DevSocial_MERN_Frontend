@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="navbar bg-base-100">
       <div className="flex-1">
         <Link to="/feed" className="btn btn-ghost text-xl">
-          DEV TINDER
+          DEV SOCIAL
         </Link>
       </div>
       {user && (
@@ -52,7 +52,6 @@ const Navbar = () => {
                 <li>
                   <Link to="/profile" className="justify-between">
                     Profile
-                    <span className="badge">New</span>
                   </Link>
                 </li>
                 <li>

@@ -28,8 +28,8 @@ const UserCard = ({ user }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}!</h2>
-        <p>{about}</p>
-        <p>age{age}</p>
+        <p>Bio : {about}</p>
+        <p>Age : {age}</p>
         <div className="card-actions justify-center">
           <button
             className="btn btn-primary"

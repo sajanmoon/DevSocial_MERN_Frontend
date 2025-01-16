@@ -63,7 +63,7 @@ const Login = () => {
           <>
             <label className="form-control w-full max-w-xs">
               <div className="label">
-                <span className="label-text">FirstName</span>
+                <span className="label-text">First Name</span>
               </div>
               <input
                 type="text"
@@ -75,7 +75,7 @@ const Login = () => {
             </label>
             <label className="form-control w-full max-w-xs">
               <div className="label">
-                <span className="label-text">LAST NAME</span>
+                <span className="label-text">Last Name</span>
               </div>
               <input
                 type="text"
@@ -104,7 +104,7 @@ const Login = () => {
             <span className="label-text">Password</span>
           </div>
           <input
-            type="text"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Type here"

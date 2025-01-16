@@ -18,7 +18,7 @@ const EditProfile = ({ user }) => {
   const handleUpdate = async () => {
     try {
       setError("");
-      const res = await axios.patch(
+      const res = await axios.put(
         BASE_URL + "/profile/edit",
         {
           firstName,
@@ -98,7 +98,7 @@ const EditProfile = ({ user }) => {
           {/* LABEL  */}
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">age</span>
+              <span className="label-text">Age </span>
             </div>
             <input
               type="text"
