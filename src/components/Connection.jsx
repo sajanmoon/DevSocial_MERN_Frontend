@@ -53,7 +53,7 @@ const Connection = () => {
               <h2 className="card-title">{firstName + " " + lastName}!</h2>
               <p>{about}</p>
               {age && gender && <p>{age + " " + gender}</p>}
-              <Link to={"/chat"}>
+              <Link to={"/chat/" + _id}>
                 <button className="btn btn-outline btn-success">Chat</button>
               </Link>
             </div>

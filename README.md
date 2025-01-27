@@ -65,7 +65,6 @@
 - We are now making a function where after we login page should redirect to feed page
 - in login.jsx we will use hook useNavigate and give path "/"
 
-
 # LOGGEDIN AFTER REFRESH
 
 - In a Body.js call a profile/view API with axios
@@ -106,3 +105,17 @@
 - with props pass to editprofile
 - <img src="./images/editprofile.png" alt="Sample Image" width="600">
 - <img src="./images/profilejsx.png" alt="Sample Image" width="600">
+
+# CHAT FEATURE
+
+## SOCKET.IO
+
+- in frontend
+- create a chat component
+- create a route "/chat/:targetUser
+- in connection component add a LINK to button
+- install socket.io-client package
+- in utils -> socket.js file
+- <img src="./images/socketjs.png" alt="Sample Image" width="600">
+- in chat component write the following code
+- <img src="./images/socketchat.png.png" alt="Sample Image" width="600">
