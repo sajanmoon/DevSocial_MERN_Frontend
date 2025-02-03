@@ -118,4 +118,4 @@
 - in utils -> socket.js file
 - <img src="./images/socketjs.png" alt="Sample Image" width="600">
 - in chat component write the following code
-- <img src="./images/socketchat.png.png" alt="Sample Image" width="600">
+- <img src="./images/socketchat.png" alt="Sample Image" width="600">
