@@ -119,3 +119,22 @@
 - <img src="./images/socketjs.png" alt="Sample Image" width="600">
 - in chat component write the following code
 - <img src="./images/socketchat.png" alt="Sample Image" width="600">
+- <img src="./images/joinchat.png" alt="Sample Image" width="600">
+- till here we were setting a room in joinchat
+- now we will set a chat in sendmessage
+- first create a new state variable [newMessage,setNewMessage] add it to input
+- create a function sendMessage add it to button send
+- in a sendMessage function write following code
+- <img src="./images/sendMessage.png" alt="Sample Image" width="600">
+- go to backend
+- we have to set messagereceived
+- <img src="./images/messagereceived.png" alt="Sample Image" width="600">
+- setMessages((messages) => [...messages, { firstName, text }]);
+- make the message and firstName dynamic by setting up the [message,setMessage] state variable
+- in firstName -> {msg.firstName}
+- in text -> {msg.text}
+- in backend as we create sepreat route for chat will fetch in frontend
+- in chat.jsx we will write following code
+- we will create a fetchChatMessages function
+- then add in a new useEffect
+- <img src="./images/fetchChatMsg.png" alt="Sample Image" width="600">
